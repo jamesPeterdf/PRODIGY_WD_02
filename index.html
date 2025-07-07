@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STOPWATCH.COM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archive+Black&family=Roboto+Mono:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">STOPWATCH.COM</div>
+  </header>
+
+  <main class="container">
+    <h1>Stopwatch Web Application</h1>
+    <div class="stopwatch">
+      <div id="display">
+        <span id="h">00</span>:<span id="m">00</span>:<span id="s">00</span>.<span id="ms">00</span>
+      </div>
+      <div class="buttons">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+        <button id="lapBtn">Lap</button>
+        <button id="historyBtn">History</button>
+      </div>
+      <ul id="laps"></ul>
+    </div>
+  </main>
+
+  <div id="lapToast" class="lap-toast">✔️ Lap Saved!</div>
+
+  <div id="historyBubble" class="history-bubble">
+    <div class="bubble-header">
+       History Laps <span class="close-bubble">&times;</span>
+    </div>
+    <ul id="historyList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
